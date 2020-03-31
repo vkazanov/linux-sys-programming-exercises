@@ -3,14 +3,26 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+/* The program launches a simple process hierarchy consisting of 2 processes.
+ * Both output their PIDs and terminate while following the usual unix-style
+ * procedure. */
+
+/* QUESTION: what syscall is used for forking the process */
+
+/* QUESTION: what happens to the child when the parent doesn't wait for its
+ * children to terminate and just exists immediately? */
+
+/* QUESTION: what is the syscall used in wait? */
+
+/* QUESTION: what is the syscall used in exit? */
+
 int main(int argc, char *argv[])
 {
     (void) argc; (void) argv;
 
     pid_t parent_pid = getpid();
 
-    /* Ignore possible error conditions here. What is the name of the syscall
-     * used for fork? */
+    /* Just fork and ignore possible error conditions here. */
     pid_t child_pid = fork();
     if (child_pid == 0) {
         /* A child is born! */
@@ -24,13 +36,8 @@ int main(int argc, char *argv[])
     /* Business as usual for the parent. */
     printf("parent (self=%d, child=%d)\n", parent_pid, child_pid);
 
-    /* Wait for child termination. Notice how wait() is a wrapper around the
-     * wait4(2) syscall. */
+    /* Wait for child termination. */
     wait(NULL);
 
-    /* What happens to the child when the parent doesn't wait for its children
-     * to terminate and just terminates? */
-
-    /* What is the syscall used in exit? */
     exit(EXIT_SUCCESS);
 }

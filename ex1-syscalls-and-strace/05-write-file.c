@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
+/* This program appends a string to a file specified in the first argument. */
+
+/* QUESTION: Find a way to make strace only display system calls related to a
+ * given file */
+
 void do_write(int out_fd)
 {
     char str[] = "write me to a file\n";
