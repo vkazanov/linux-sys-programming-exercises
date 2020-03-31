@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* The program writes a string into a temporary file */
+
+/* QUESTION: is there a way to display file paths instead of file descriptors
+ * using strace? */
+
 void do_write(int out_fd)
 {
     char str[] = "write me to a file\n";

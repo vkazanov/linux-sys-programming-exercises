@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* This trivial program writes 2 strings to stdout */
+
+/* QUESTION: make strace output the stacktrace around syscalls involved */
+
+/* QUESTION: inject an error into the second write using strace (but not the
+ * syscall behind perror) */
+
 void do_write(const char *str, ssize_t len)
 {
     if (len != write(STDOUT_FILENO, str, (size_t)len)){

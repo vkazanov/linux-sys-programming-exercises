@@ -3,6 +3,16 @@
 #include <unistd.h>
 #include <pthread.h>
 
+/* The program runs 2 threads (an initial and a secondary one), both printing
+ * strings to stdout */
+
+/* QUESTION: find a way to make strace differentiate syscalls on a per-thread basis */
+
+/* QUESTION: what syscall is used on linux for creating threads? compare with
+ * fork-related syscalls */
+
+/* NOTE: you will need to use the -pthread flag to compile this program*/
+
 void *thread(void *arg)
 {
     (void) arg;
