@@ -1,7 +1,8 @@
 * Using Strace to trace system calls on Linux
 
   Unix-like systems isolate user programs from hardware using the system call system. In
-  this set of exercises we'll use strace to study system calls issued by example programs.
+  this set of exercises we'll use strace to study system calls issued by the example
+  programs.
 
   Notice that system calls are not the same as library wrappers defined in glibc. Most
   Unix-related standards cover functions and function-like macros but not system calls
@@ -10,7 +11,7 @@
 
 * Useful reading
 
-  #+begin_example
+#+begin_example
   https://en.wikipedia.org/wiki/System_call
   https://en.wikipedia.org/wiki/Strace
   man 1 strace
