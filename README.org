@@ -1,2 +1,26 @@
-# linux-sys-programming-exercises
-Exercises in system programming on Linux
+* Exercises in system programming on Linux
+
+  Every subdirectory (e.g. [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex1-syscalls-and-strace][this one]]) in the repo contains a set of exercises related to a
+  single topic. A subdirectory README file will cover topic-related trivia and provide
+  additional references. I'll be publishing sets of exercises every 2 weeks or so.
+
+  An exercise is typically a [[https://github.com/vkazanov/linux-sys-programming-exercises/blob/master/ex1-syscalls-and-strace/01-write-simple.c][file in C]], with questions and additional info written
+  directly in code comments. The point of the exercise is to answer a [[https://github.com/vkazanov/linux-sys-programming-exercises/blob/master/ex1-syscalls-and-strace/01-write-simple.c#L8][QUESTION]], which
+  might require fixing the code, or just running it with some additional setup.
+
+  I hope that everybody will participate actively, i.e. propose fixes and extensions to
+  the exersises, discuss and ask questions.
+
+  This is an experiment for me so I'd be happy to hear your comments.
+
+* Topic list
+
+  - [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex1-syscalls-and-strace][System calls and strace]]
+
+  - Traditional access permissions
+
+  - Process hierarchy
+
+  - Traditional signals
+
+  - ... many more to come
