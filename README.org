@@ -17,6 +17,8 @@
 
   - [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex1-syscalls-and-strace][System calls and strace]]
 
+  - [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex2-processes][Process creation and termination]]
+
   - Traditional access permissions
 
   - Process hierarchy

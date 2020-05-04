@@ -1,0 +1,18 @@
+* Processes on Linux
+
+  In every Unix-like operational system (and most modern non-Unix ones) processes are
+  fundamental building blocks representing user applications. So every developer using
+  Linux should be familiar with the typical ways processes can be created through the
+  legendary fork/exec calls.
+
+* Useful reading
+
+#+begin_example
+man 2 fork
+man 3 exec
+man 2 wait
+man 2 alarm
+https://en.wikipedia.org/wiki/Fork_(system_call)
+https://en.wikipedia.org/wiki/Fork–exec
+https://en.wikipedia.org/wiki/Wait_(system_call)
+#+end_example
