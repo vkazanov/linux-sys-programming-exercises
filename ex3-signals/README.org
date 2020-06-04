@@ -1,0 +1,14 @@
+* Signals
+
+  Signals are the next piece of the Unix puzzle every programmer has to be aware of. It is
+  one of the core mechanisms used by Unix-likes for notifying processes of standard
+  events, e.g child process termination (the SIGCHLD signal) process or user-requested
+  interruption usch as the SIGINT signal (generated using the Ctrl-C character).
+
+* Useful reading
+
+#+begin_example
+https://en.wikipedia.org/wiki/Signal_(IPC)
+man 7 signal
+man 7 signal-safety
+#+end_example

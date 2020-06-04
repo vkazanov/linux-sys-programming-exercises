@@ -19,10 +19,10 @@
 
   - [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex2-processes][Process creation and termination]]
 
+  - [[https://github.com/vkazanov/linux-sys-programming-exercises/tree/master/ex3-signals][Signals]]
+
   - Traditional access permissions
 
   - Process hierarchy
-
-  - Traditional signals
 
   - ... many more to come
